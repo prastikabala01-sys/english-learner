@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="English Learner: easy English grammar, writing formats, examples and practice for students and everyone.">
+<title>English Learner | Learn English Easily</title>
+<style>
+:root{--navy:#14213d;--blue:#2563eb;--sky:#eaf2ff;--gold:#fca311;--ink:#1f2937;--muted:#64748b;--paper:#fff;--bg:#f5f7fb;--line:#e5eaf2}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65}
+header{background:linear-gradient(120deg,#14213d,#1d4ed8);color:white;padding:18px max(5%,calc((100% - 1150px)/2));position:sticky;top:0;z-index:10;box-shadow:0 3px 16px #10234b33}
+.top{display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap}.brand{font-size:1.45rem;font-weight:850;letter-spacing:.2px}.brand span{color:#ffd166}
+nav{display:flex;gap:8px;flex-wrap:wrap}nav a{color:white;text-decoration:none;padding:7px 11px;border-radius:9px;font-size:.92rem}nav a:hover{background:#ffffff25}
+.hero{background:linear-gradient(135deg,#eaf2ff,#fff7e6);padding:65px 5% 55px;text-align:center}.hero-inner{max-width:850px;margin:auto}.tag{display:inline-block;background:#dbeafe;color:#1d4ed8;border-radius:30px;padding:5px 13px;font-weight:700;font-size:.82rem}.hero h1{font-size:clamp(2.1rem,5vw,3.6rem);line-height:1.12;color:var(--navy);margin:17px 0}.hero p{font-size:1.1rem;color:#475569;max-width:700px;margin:0 auto 22px}.search{display:flex;max-width:580px;margin:auto;background:white;padding:6px;border:1px solid #dbe3ef;border-radius:14px;box-shadow:0 8px 25px #18345b12}.search input{border:0;outline:0;flex:1;min-width:0;padding:12px;font-size:1rem}.btn{background:var(--blue);color:white;border:0;border-radius:10px;padding:11px 17px;font-weight:700;cursor:pointer}.btn:hover{background:#1d4ed8}
+.wrap{max-width:1150px;margin:auto;padding:35px 20px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:12px;flex-wrap:wrap;margin-bottom:18px}.section-head h2{margin:0;color:var(--navy);font-size:1.8rem}.section-head p{margin:3px 0;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(225px,1fr));gap:16px}.card{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:0 5px 18px #1e293b08}.card h3{margin:4px 0 7px;color:var(--navy)}.card p{margin:0;color:var(--muted)}.card .emoji{font-size:1.7rem}.card a{display:inline-block;margin-top:13px;color:var(--blue);font-weight:750;text-decoration:none}.card:hover{transform:translateY(-2px);transition:.2s;box-shadow:0 10px 24px #1e293b12}
+.pills{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 18px}.pill{border:1px solid #cbd5e1;background:white;color:#334155;border-radius:25px;padding:8px 13px;cursor:pointer}.pill.active{background:var(--navy);color:white;border-color:var(--navy)}
+.lesson{background:white;border:1px solid var(--line);border-radius:16px;padding:24px;margin:14px 0}.lesson h3{color:var(--navy);margin-top:0}.lesson h4{margin-bottom:5px;color:#1d4ed8}.hi{color:#64748b;font-size:.95rem}.example{background:#f0f6ff;border-left:4px solid var(--blue);padding:12px 15px;border-radius:8px;margin:10px 0}.format{white-space:pre-line;background:#f8fafc;border:1px dashed #b8c5d8;border-radius:10px;padding:16px;font-family:Georgia,serif}.note{background:#fff7e6;border-left:4px solid var(--gold);padding:12px 15px;border-radius:8px}
+table{border-collapse:collapse;width:100%;margin:10px 0}td,th{border:1px solid var(--line);padding:9px;text-align:left}th{background:#eff6ff}
+.quiz-q{padding:15px 0;border-bottom:1px solid var(--line)}.quiz-q p{font-weight:700;margin:0 0 8px}.quiz-q label{display:block;margin:5px 0;cursor:pointer}.result{font-weight:800;color:#166534;margin-top:14px}
+footer{background:var(--navy);color:#dbeafe;text-align:center;padding:28px 15px;margin-top:30px}footer strong{color:white}
+.hidden{display:none!important}
+@media(max-width:650px){header{position:static}.top{justify-content:center}nav{justify-content:center}.hero{padding-top:42px}.wrap{padding:28px 15px}.search{flex-direction:column}.search .btn{width:100%}}
+</style>
+</head>
+<body>
+<header><div class="top"><div class="brand">📘 English <span>Learner</span></div><nav><a href="#home">Home</a><a href="#writing">Writing</a><a href="#grammar">Grammar</a><a href="#practice">Practice</a></nav></div></header>
+<section class="hero" id="home"><div class="hero-inner"><span class="tag">Learn • Understand • Practise</span><h1>English made easy for everyone.</h1><p>Learn grammar, improve writing and practise English step by step. Simple explanations, Hindi support, examples and ready-to-use formats.</p><div class="search"><input id="searchInput" placeholder="Search: noun, letter, notice, preposition..." aria-label="Search lessons"><button class="btn" onclick="searchLessons()">Search lessons</button></div></div></section>
+
+<main>
+<section class="wrap" id="writing"><div class="section-head"><div><h2>✍️ Writing Skills</h2><p>Formats, rules and examples for school and everyday writing.</p></div></div>
+<div class="grid">
+<div class="card"><div class="emoji">✉️</div><h3>Formal Letter</h3><p>Official letters to the principal, editor or authorities.</p><a href="#formal-letter">Learn format →</a></div>
+<div class="card"><div class="emoji">💌</div><h3>Informal Letter</h3><p>Friendly letters to friends and family.</p><a href="#informal-letter">Learn format →</a></div>
+<div class="card"><div class="emoji">📢</div><h3>Notice Writing</h3><p>School events, competitions and important announcements.</p><a href="#notice">Learn format →</a></div>
+<div class="card"><div class="emoji">💬</div><h3>Message Writing</h3><p>Short, clear messages with all key details.</p><a href="#message">Learn format →</a></div>
+<div class="card"><div class="emoji">📝</div><h3>Application Writing</h3><p>Leave, fee concession and other school applications.</p><a href="#application">Learn format →</a></div>
+<div class="card"><div class="emoji">📖</div><h3>Paragraph & Essay</h3><p>Plan a topic, organise ideas and write clearly.</p><a href="#paragraph">Learn format →</a></div>
+</div>
+
+<div class="lesson" id="formal-letter"><h3>1. Formal Letter Format</h3><p class="hi">औपचारिक पत्र — principal, editor या किसी अधिकारी को लिखा जाता है।</p><div class="format">Sender's Address
+Date
+
+Receiver's Designation
+Receiver's Address
+
+Subject: __________________
+
+Respected Sir/Madam,
+
+[Write the purpose of your letter in clear paragraphs.]
+
+Thank you.
+
+Yours faithfully,
+Your Name</div><h4>Example subject</h4><p>Subject: Request for two days' leave</p><div class="note">Tip: Keep the tone polite, use short paragraphs and do not use casual language.</div></div>
+<div class="lesson" id="informal-letter"><h3>2. Informal Letter Format</h3><p class="hi">अनौपचारिक पत्र — friends और family के लिए।</p><div class="format">Your Address
+Date
+
+Dear [Name],
+
+How are you? I hope you are doing well.
+
+[Write your news, feelings or invitation in friendly language.]
+
+Give my regards to everyone.
+
+Yours lovingly,
+Your Name</div></div>
+<div class="lesson" id="notice"><h3>3. Notice Writing Format</h3><p class="hi">Notice कम शब्दों में जरूरी जानकारी देता है।</p><div class="format">NAME OF SCHOOL / ORGANISATION
+NOTICE
+Date: __________
+
+TITLE / HEADING
+
+This is to inform all students that __________________.
+Date/Time: __________
+Venue: ______________
+Interested students should __________________.
+
+Name
+Designation</div><p><strong>Remember:</strong> Include what, when, where and who. Follow the word limit given in your question.</p></div>
+<div class="lesson" id="message"><h3>4. Message Writing Format</h3><p class="hi">किसी अनुपस्थित व्यक्ति के लिए छोटा संदेश।</p><div class="format">MESSAGE
+Date: _______   Time: _______
+
+Dear [Name],
+
+[Person who called] called to say that __________________.
+Please __________________.
+
+[Your Name]</div><p><strong>Tip:</strong> Do not add unnecessary details. Include the caller, main information and action required.</p></div>
+<div class="lesson" id="application"><h3>5. Application Writing Format</h3><p class="hi">School application का सामान्य format।</p><div class="format">To,
+The Principal,
+[School Name]
+[City]
+
+Date: __________
+
+Subject: Application for leave
+
+Respected Sir/Madam,
+
+I am a student of Class ____ Section ____. I am unable to attend school because __________________. Kindly grant me leave for ____ days, from ____ to ____.
+
+Thank you.
+
+Yours obediently,
+Name: __________
+Class/Section: __________
+Roll No.: __________</div></div>
+<div class="lesson" id="paragraph"><h3>6. Paragraph & Essay Writing</h3><h4>Easy structure</h4><ol><li><strong>Introduction:</strong> Introduce the topic.</li><li><strong>Main body:</strong> Explain 2–4 important points with examples.</li><li><strong>Conclusion:</strong> End with your opinion or a short summary.</li></ol><div class="example"><strong>Opening example — Importance of Education:</strong><br>Education is one of the most important parts of our life. It gives us knowledge, confidence and the ability to make better decisions.</div></div>
+</section>
+
+<section class="wrap" id="grammar"><div class="section-head"><div><h2>📚 English Grammar</h2><p>Simple definitions, Hindi meaning and examples.</p></div></div>
+<div class="pills" id="grammarTabs"><button class="pill active" data-topic="all">All topics</button><button class="pill" data-topic="basics">Parts of speech</button><button class="pill" data-topic="sentences">Sentence rules</button><button class="pill" data-topic="usage">Word usage</button></div>
+<div id="grammarList">
+<div class="lesson grammar-item" data-category="basics"><h3>1. Noun (संज्ञा)</h3><p>A noun is the name of a person, place, animal, thing or idea.</p><div class="example">Examples: Riya, Delhi, dog, book, honesty.</div><p><strong>Types:</strong> Proper, Common, Collective, Material and Abstract Nouns.</p></div>
+<div class="lesson grammar-item" data-category="basics"><h3>2. Pronoun (सर्वनाम)</h3><p>A pronoun is a word used instead of a noun.</p><div class="example">Riya is kind. <strong>She</strong> helps everyone.<br>Examples: I, we, you, he, she, it, they, who.</div><p><strong>Types:</strong> Personal, Possessive, Reflexive, Demonstrative, Relative and Interrogative.</p></div>
+<div class="lesson grammar-item" data-category="basics"><h3>3. Verb (क्रिया)</h3><p>A verb tells us about an action or state.</p><div class="example">Examples: run, eat, write, is, are, seem.<br>She <strong>reads</strong> every day.</div><p>Verbs can be main/helping, action/linking, and regular/irregular.</p></div>
+<div class="lesson grammar-item" data-category="basics"><h3>4. Adverb (क्रिया-विशेषण)</h3><p>An adverb adds information about a verb, adjective or another adverb. It can tell how, when, where or how often.</p><div class="example">He runs <strong>quickly</strong>. She arrived <strong>yesterday</strong>. They are <strong>very</strong> happy.</div></div>
+<div class="lesson grammar-item" data-category="basics"><h3>5. Adjective (विशेषण)</h3><p>An adjective describes a noun or pronoun.</p><div class="example">A <strong>beautiful</strong> flower. Three <strong>small</strong> birds.</div></div>
+<div class="lesson grammar-item" data-category="basics"><h3>6. Preposition (संबंध सूचक शब्द)</h3><p>A preposition shows the relationship of a noun/pronoun to another word.</p><div class="example">The book is <strong>on</strong> the table. We meet <strong>at</strong> 5 pm. She lives <strong>in</strong> India.</div><p><strong>Common prepositions:</strong> in, on, at, under, over, between, among, behind, beside, since, for, from, to.</p></div>
+<div class="lesson grammar-item" data-category="basics"><h3>7. Conjunction (समुच्चयबोधक)</h3><p>A conjunction joins words or sentences.</p><div class="example">I was tired, <strong>but</strong> I finished my work. Riya <strong>and</strong> Siya are friends.</div></div>
+<div class="lesson grammar-item" data-category="basics"><h3>8. Interjection (विस्मयादिबोधक)</h3><p>An interjection expresses a sudden feeling.</p><div class="example"><strong>Wow!</strong> That is amazing. <strong>Oh!</strong> I forgot my book.</div></div>
+<div class="lesson grammar-item" data-category="sentences"><h3>9. Subject–Verb Agreement</h3><p>The verb must agree with its subject in number and person.</p><table><tr><th>Subject</th><th>Correct verb</th><th>Example</th></tr><tr><td>He / She / It</td><td>is / has / plays</td><td>She plays cricket.</td></tr><tr><td>I</td><td>am / have / play</td><td>I am ready.</td></tr><tr><td>You / We / They</td><td>are / have / play</td><td>They are happy.</td></tr></table><div class="note">Remember: “He go to school” is incorrect. Say “He goes to school.”</div></div>
+<div class="lesson grammar-item" data-category="sentences"><h3>10. Tenses (काल)</h3><p>Tenses show when an action happens: present, past or future.</p><table><tr><th>Tense</th><th>Example</th></tr><tr><td>Simple Present</td><td>I play.</td></tr><tr><td>Present Continuous</td><td>I am playing.</td></tr><tr><td>Present Perfect</td><td>I have played.</td></tr><tr><td>Simple Past</td><td>I played.</td></tr><tr><td>Past Continuous</td><td>I was playing.</td></tr><tr><td>Simple Future</td><td>I will play.</td></tr></table></div>
+<div class="lesson grammar-item" data-category="sentences"><h3>11. Articles (A, An, The)</h3><p><strong>A</strong> comes before a consonant sound; <strong>an</strong> before a vowel sound; <strong>the</strong> for something specific.</p><div class="example">a book • an apple • an hour • the Sun</div></div>
+<div class="lesson grammar-item" data-category="sentences"><h3>12. Active & Passive Voice</h3><p>Active voice focuses on the doer. Passive voice focuses on the action or receiver.</p><div class="example">Active: The boy kicked the ball.<br>Passive: The ball was kicked by the boy.</div></div>
+<div class="lesson grammar-item" data-category="sentences"><h3>13. Direct & Indirect Speech</h3><p>Direct speech gives the exact words. Indirect speech reports what someone said.</p><div class="example">Direct: He said, “I am happy.”<br>Indirect: He said that he was happy.</div></div>
+<div class="lesson grammar-item" data-category="usage"><h3>14. Modals</h3><p>Modals are helping verbs that express ability, permission, advice or possibility.</p><div class="example">can (ability), may (permission/possibility), should (advice), must (necessity), might (possibility).</div></div>
+<div class="lesson grammar-item" data-category="usage"><h3>15. Punctuation</h3><p>Punctuation marks make writing clear.</p><div class="example">Full stop (.) • Comma (,) • Question mark (?) • Exclamation mark (!) • Apostrophe (')</div><p>Example: “Where are you going?” asked Rohan.</p></div>
+<div class="lesson grammar-item" data-category="usage"><h3>16. Singular & Plural</h3><p>Singular means one; plural means more than one.</p><div class="example">book → books • city → cities • child → children • mouse → mice</div></div>
+<div class="lesson grammar-item" data-category="usage"><h3>17. Degrees of Comparison</h3><p>Adjectives can show positive, comparative and superlative degrees.</p><div class="example">tall → taller → tallest<br>good → better → best</div></div>
+<div class="lesson grammar-item" data-category="usage"><h3>18. Gerund & Infinitive</h3><p>A gerund is an -ing verb form used as a noun. An infinitive is usually “to + base verb”.</p><div class="example"><strong>Swimming</strong> is fun. / I want <strong>to learn</strong>.</div></div>
+</div></section>
+
+<section class="wrap" id="practice"><div class="section-head"><div><h2>🎯 Practice Quiz</h2><p>Try these questions and check your score.</p></div></div><div class="lesson"><form id="quizForm">
+<div class="quiz-q"><p>1. Which word is a noun?</p><label><input type="radio" name="q1" value="a"> Quickly</label><label><input type="radio" name="q1" value="b"> Teacher</label><label><input type="radio" name="q1" value="c"> Beautiful</label></div>
+<div class="quiz-q"><p>2. Choose the correct sentence.</p><label><input type="radio" name="q2" value="a"> She go to school.</label><label><input type="radio" name="q2" value="b"> She going school.</label><label><input type="radio" name="q2" value="c"> She goes to school.</label></div>
+<div class="quiz-q"><p>3. Choose the correct preposition: The keys are ___ the table.</p><label><input type="radio" name="q3" value="a"> on</label><label><input type="radio" name="q3" value="b"> quickly</label><label><input type="radio" name="q3" value="c"> because</label></div>
+<div class="quiz-q"><p>4. Which is an adverb?</p><label><input type="radio" name="q4" value="a"> Kindness</label><label><input type="radio" name="q4" value="b"> Slowly</label><label><input type="radio" name="q4" value="c"> Garden</label></div>
+<div class="quiz-q"><p>5. Choose the correct article: She ate ___ apple.</p><label><input type="radio" name="q5" value="a"> a</label><label><input type="radio" name="q5" value="b"> an</label><label><input type="radio" name="q5" value="c"> the</label></div>
+<button class="btn" type="button" onclick="checkQuiz()">Check my score</button> <button class="pill" type="reset" onclick="document.getElementById('quizResult').textContent=''">Try again</button><div class="result" id="quizResult" aria-live="polite"></div></form></div></section>
+</main>
+<footer><strong>📘 English Learner</strong><br>Learn a little English every day. Keep practising!<br><small>Educational resource • Simple English with Hindi support</small></footer>
+<script>
+function searchLessons(){const q=document.getElementById('searchInput').value.toLowerCase().trim();const items=[...document.querySelectorAll('.lesson')];let first=null;items.forEach(el=>{const match=!q||el.innerText.toLowerCase().includes(q);el.classList.toggle('hidden',!match);if(match&&!first)first=el});if(first)first.scrollIntoView({behavior:'smooth',block:'start'});else alert('No lesson found. Try another word.')}
+document.getElementById('searchInput').addEventListener('keydown',e=>{if(e.key==='Enter')searchLessons()});
+document.querySelectorAll('#grammarTabs .pill').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('#grammarTabs .pill').forEach(b=>b.classList.remove('active'));btn.classList.add('active');const topic=btn.dataset.topic;document.querySelectorAll('.grammar-item').forEach(el=>el.classList.toggle('hidden',topic!=='all'&&el.dataset.category!==topic))}));
+function checkQuiz(){const answers={q1:'b',q2:'c',q3:'a',q4:'b',q5:'b'};let score=0,answered=0;for(const [q,a] of Object.entries(answers)){const chosen=document.querySelector('input[name="'+q+'"]:checked');if(chosen){answered++;if(chosen.value===a)score++}}const out=document.getElementById('quizResult');out.textContent=answered<5?'Please answer all 5 questions. You have answered '+answered+'/5.':'Your score: '+score+'/5 '+(score===5?'— Excellent work!':score>=3?'— Good effort! Keep practising.':'— Keep learning. Try again!')}
+</script>
+</body></html>
